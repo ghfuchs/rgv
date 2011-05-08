@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  zipcode: 1
+  pickup: MyString
+  delivery: MyString
+  min_delivery: 9.99
+  delivery_fee: 9.99
+
+two:
+  name: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  zipcode: 1
+  pickup: MyString
+  delivery: MyString
+  min_delivery: 9.99
+  delivery_fee: 9.99

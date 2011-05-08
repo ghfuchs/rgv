@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @restaurant.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @restaurant.address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @restaurant.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @restaurant.state %>
+</p>
+
+<p>
+  <b>Zipcode:</b>
+  <%= @restaurant.zipcode %>
+</p>
+
+<p>
+  <b>Pickup:</b>
+  <%= @restaurant.pickup %>
+</p>
+
+<p>
+  <b>Delivery:</b>
+  <%= @restaurant.delivery %>
+</p>
+
+<p>
+  <b>Min delivery:</b>
+  <%= @restaurant.min_delivery %>
+</p>
+
+<p>
+  <b>Delivery fee:</b>
+  <%= @restaurant.delivery_fee %>
+</p>
+
+
+<%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
+<%= link_to 'Back', restaurants_path %>

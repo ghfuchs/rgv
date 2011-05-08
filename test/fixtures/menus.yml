@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  description: MyString
+  image: MyString
+  qty: 1
+  price: 9.99
+  sp_price: 9.99
+  prep_time: 1
+
+two:
+  description: MyString
+  image: MyString
+  qty: 1
+  price: 9.99
+  sp_price: 9.99
+  prep_time: 1
