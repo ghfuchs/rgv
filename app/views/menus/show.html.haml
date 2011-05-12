@@ -1,0 +1,22 @@
+p#notice= notice
+%p
+  %b Description:
+  = @menu.description
+%p
+  %b Image:
+  = @menu.image
+%p
+  %b Qty:
+  = @menu.qty
+%p
+  %b Price:
+  = @menu.price
+%p
+  %b Sp price:
+  = @menu.sp_price
+%p
+  %b Prep time:
+  = @menu.prep_time
+= link_to 'Edit', edit_menu_path(@menu)
+|
+\#{link_to 'Back', menus_path}

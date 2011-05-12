@@ -1,0 +1,31 @@
+%p#notice= notice
+%p
+  %b Name:
+  = @restaurant.name
+%p
+  %b Address:
+  = @restaurant.address
+%p
+  %b City:
+  = @restaurant.city
+%p
+  %b State:
+  = @restaurant.state
+%p
+  %b Zipcode:
+  = @restaurant.zipcode
+%p
+  %b Pickup:
+  = @restaurant.pickup
+%p
+  %b Delivery:
+  = @restaurant.delivery
+%p
+  %b Min delivery:
+  = @restaurant.min_delivery
+%p
+  %b Delivery fee:
+  = @restaurant.delivery_fee
+= link_to 'Edit', edit_restaurant_path(@restaurant)
+|
+\#{link_to 'Back', restaurants_path}

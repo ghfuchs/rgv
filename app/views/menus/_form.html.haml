@@ -1,0 +1,35 @@
+= form_for(@menu) do |f|
+  - if @menu.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@menu.errors.count, "error")
+        prohibited this menu from being saved:
+      %ul
+        - @menu.errors.full_messages.each do |msg|
+          %li= msg
+  .field
+    = f.label :description
+    %br/
+    = f.text_field :description
+  .field
+    = f.label :image
+    %br/
+    = f.text_field :image
+  .field
+    = f.label :qty
+    %br/
+    = f.text_field :qty
+  .field
+    = f.label :price
+    %br/
+    = f.text_field :price
+  .field
+    = f.label :sp_price
+    %br/
+    = f.text_field :sp_price
+  .field
+    = f.label :prep_time
+    %br/
+    = f.text_field :prep_time
+  .actions
+    = f.submit

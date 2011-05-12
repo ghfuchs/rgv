@@ -1,0 +1,25 @@
+%h1 Listing menus
+%table
+  %tr
+    %th Description
+    %th Image
+    %th Qty
+    %th Price
+    %th Sp price
+    %th Prep time
+    %th
+    %th
+    %th
+  - @menus.each do |menu|
+    %tr
+      %td= menu.description
+      %td= menu.image
+      %td= menu.qty
+      %td= menu.price
+      %td= menu.sp_price
+      %td= menu.prep_time
+      %td= link_to 'Show', menu
+      %td= link_to 'Edit', edit_menu_path(menu)
+      %td= link_to 'Destroy', menu, confirm: 'Are you sure?', method: :delete
+%br/
+= link_to 'New Menu', new_menu_path
