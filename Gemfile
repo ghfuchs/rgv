@@ -14,11 +14,11 @@ gem 'uglifier'
 
 gem 'jquery-rails'
 gem 'haml'
+gem 'haml-rails'
 gem 'coffee-filter'
 
 gem 'ruby_parser'
 gem 'hpricot'
-gem 'formtastic'
 
 # Use unicorn as the web server
 # gem 'unicorn'

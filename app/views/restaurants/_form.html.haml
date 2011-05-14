@@ -3,22 +3,50 @@
     #error_explanation
       %h2
         = pluralize(@restaurant.errors.count, "error")
-        prohibited this restaurant from being saved:
+        prohibited this menu from being saved:
       %ul
         - @restaurant.errors.full_messages.each do |msg|
           %li= msg
-
-  =semantic_form_for @contract do |f|
-  = f.inputs :class => 'inline_fields' do
-  = f.input :restaurant_id, :input_html => { :size => 9, :disabled => true }
-  = f.input :name, :input_html => { :size => 8, :disabled => true }
-  = f.input :address, :input_html => { :size => 8, :disabled => true }
-  = f.input :city, :input_html => { :size => 8, :disabled => true }
-  = f.input :state, :input_html => { :size => 8, :disabled => true }
-  = f.input :pickup, :input_html => { :size => 8, :disabled => true }
-  = f.input :delivery, :input_html => { :size => 8, :disabled => true }
-  = f.input :min_delivery, :input_html => { :size => 8, :disabled => true }
-  = f.input :delivery_fee, :input_html => { :size => 8, :disabled => true }
+  .field
+    = f.label :restaurant_id
+    %br/
+    = f.text_field :restaurant_id
+  .field
+    = f.label :name
+    %br/
+    = f.text_field :name
+  .field
+    = f.label :address
+    %br/
+    = f.text_field :address
+  .field
+    = f.label :city
+    %br/
+    = f.text_field :city
+  .field
+    = f.label :state
+    %br/
+    = f.text_field :state
+  .field
+    = f.label :zipcode
+    %br/
+    = f.text_field :zipcode
+  .field
+    = f.label :pickup
+    %br/
+    = f.text_field :pickup
+  .field
+    = f.label :delivery
+    %br/
+    = f.text_field :delivery
+  .field
+    = f.label :min_delivery
+    %br/
+    = f.text_field :min_delivery
+  .field
+    = f.label :delivery_fee
+    %br/
+    = f.text_field :delivery_fee
 
 
   .actions
