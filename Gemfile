@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.beta1'
+gem 'rails', '3.1.0rc1'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -12,10 +12,15 @@ gem 'sass'
 gem 'coffee-script'
 gem 'uglifier'
 
+# version 0.9.0 broke rails
+gem "rake", "0.8.7"
+
+
 gem 'jquery-rails'
 gem 'haml'
 gem 'haml-rails'
 gem 'coffee-filter'
+gem 'formtastic'
 
 gem 'ruby_parser'
 gem 'hpricot'

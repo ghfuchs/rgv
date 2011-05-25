@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Restaurant:
+  = @order.restaurant_id
+%p
+  %b Customer:
+  = @order.customer_id
+
+= link_to 'Edit', edit_order_path(@order)
+\|
+= link_to 'Back', orders_path

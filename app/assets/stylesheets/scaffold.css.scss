@@ -1,4 +1,8 @@
-body { background-color: #fff; color: #333; }
+$background_color: #fee;
+$text_color: #000;
+
+body { background-color: $background_color; color: $text_color; }
+
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;

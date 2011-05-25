@@ -10,17 +10,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110512235942) do
+ActiveRecord::Schema.define(:version => 20110525235559) do
 
   create_table "customers", :force => true do |t|
     t.string   "first_name"
     t.string   "last_name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "customer_id"
   end
 
   create_table "menus", :force => true do |t|
-    t.integer  "restaurant_id",                                :null => false
+    t.integer  "restaurant_id", :limit => 8,                   :null => false
     t.string   "description",   :limit => 40,                  :null => false
     t.string   "image_url",     :limit => 40
     t.integer  "qty"
@@ -29,12 +30,22 @@ ActiveRecord::Schema.define(:version => 20110512235942) do
     t.time     "prep_time"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "menu_id",       :limit => 10
   end
 
   add_index "menus", ["restaurant_id"], :name => "index_menus_on_restaurant_id", :unique => true
 
+  create_table "orders", :force => true do |t|
+    t.integer  "restaurant_id", :limit => 8
+    t.integer  "customer_id",   :limit => 8
+    t.integer  "order_id",      :limit => 10
+    t.string   "menu_id",       :limit => 10
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "restaurants", :force => true do |t|
-    t.integer  "restaurant_id",                                :null => false
+    t.integer  "restaurant_id", :limit => 8,                   :null => false
     t.string   "name",          :limit => 40,                  :null => false
     t.string   "address",       :limit => 25,                  :null => false
     t.string   "city",          :limit => 30,                  :null => false
