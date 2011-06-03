@@ -10,14 +10,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110525235559) do
+ActiveRecord::Schema.define(:version => 20110527003150) do
 
   create_table "customers", :force => true do |t|
     t.string   "first_name"
     t.string   "last_name"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "customer_id"
   end
 
   create_table "menus", :force => true do |t|
@@ -30,7 +29,6 @@ ActiveRecord::Schema.define(:version => 20110525235559) do
     t.time     "prep_time"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "menu_id",       :limit => 10
   end
 
   add_index "menus", ["restaurant_id"], :name => "index_menus_on_restaurant_id", :unique => true
@@ -45,20 +43,17 @@ ActiveRecord::Schema.define(:version => 20110525235559) do
   end
 
   create_table "restaurants", :force => true do |t|
-    t.integer  "restaurant_id", :limit => 8,                   :null => false
-    t.string   "name",          :limit => 40,                  :null => false
-    t.string   "address",       :limit => 25,                  :null => false
-    t.string   "city",          :limit => 30,                  :null => false
-    t.string   "state",         :limit => 2,                   :null => false
-    t.string   "zipcode",       :limit => 5,                   :null => false
-    t.string   "pickup",        :limit => 1
-    t.string   "delivery",      :limit => 1
-    t.decimal  "min_delivery",                :default => 0.0
-    t.decimal  "delivery_fee",                :default => 0.0
+    t.string   "name",         :limit => 40,                                                :null => false
+    t.string   "address",      :limit => 25,                                                :null => false
+    t.string   "city",         :limit => 30,                                                :null => false
+    t.string   "state",        :limit => 2,                                                 :null => false
+    t.integer  "zipcode",      :limit => 5,                                                 :null => false
+    t.string   "pickup",       :limit => 1
+    t.string   "delivery",     :limit => 1
+    t.decimal  "min_delivery",               :precision => 8, :scale => 2, :default => 0.0
+    t.decimal  "delivery_fee",               :precision => 8, :scale => 2, :default => 0.0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "restaurants", ["restaurant_id"], :name => "index_restaurants_on_restaurant_id", :unique => true
 
 end
