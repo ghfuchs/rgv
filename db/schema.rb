@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110527003150) do
+ActiveRecord::Schema.define(:version => 20110603175655) do
 
   create_table "customers", :force => true do |t|
     t.string   "first_name"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(:version => 20110527003150) do
   create_table "menus", :force => true do |t|
     t.integer  "restaurant_id", :limit => 8,                   :null => false
     t.string   "description",   :limit => 40,                  :null => false
-    t.string   "image_url",     :limit => 40
+    t.string   "menu_image",    :limit => 40
     t.integer  "qty"
     t.decimal  "price",                       :default => 0.0, :null => false
     t.decimal  "sp_price",                    :default => 0.0

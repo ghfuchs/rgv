@@ -24,6 +24,8 @@ gem 'formtastic'
 
 gem 'ruby_parser'
 gem 'hpricot'
+#gem 'rmagick'
+gem 'carrierwave'
 
 # Use unicorn as the web server
 # gem 'unicorn'

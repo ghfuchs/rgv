@@ -13,10 +13,10 @@
   - @menus.each do |menu|
     %tr
       %td= menu.description
-      %td= menu.image
+      %td= menu.menu_image
       %td= menu.qty
-      %td= menu.price
-      %td= menu.sp_price
+      %td= number_to_currency(menu.price)
+      %td= number_to_currency(menu.sp_price)
       %td= menu.prep_time
       %td= link_to 'Show', menu
       %td= link_to 'Edit', edit_menu_path(menu)

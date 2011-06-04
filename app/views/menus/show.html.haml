@@ -10,10 +10,10 @@ p#notice= notice
   = @menu.qty
 %p
   %b Price:
-  = @menu.price
+  = number_to_currency(@menu.price)
 %p
   %b Sp price:
-  = @menu.sp_price
+  = number_to_currency(@menu.sp_price)
 %p
   %b Prep time:
   = @menu.prep_time

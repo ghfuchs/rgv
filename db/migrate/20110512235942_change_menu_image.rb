@@ -1,6 +1,7 @@
 class ChangeMenuImage < ActiveRecord::Migration
+
   def change
-    change_column :menus, :image_url, :string, :limit => 40
+    rename_column :menus, :image_url, :menu_image
   end
 
 end

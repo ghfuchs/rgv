@@ -22,8 +22,8 @@
       %td= restaurant.zipcode
       %td= restaurant.pickup
       %td= restaurant.delivery
-      %td= restaurant.min_delivery
-      %td= restaurant.delivery_fee
+      %td= number_to_currency(restaurant.min_delivery)
+      %td= number_to_currency(restaurant.delivery_fee)
       %td= link_to 'Show', restaurant
       %td= link_to 'Edit', edit_restaurant_path(restaurant)
       %td= link_to 'Destroy', restaurant, confirm: 'Are you sure?', method: :delete

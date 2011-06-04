@@ -22,10 +22,10 @@
   = @restaurant.delivery
 %p
   %b Min delivery:
-  = @restaurant.min_delivery
+  = number_to_currency(@restaurant.min_delivery)
 %p
   %b Delivery fee:
-  = @restaurant.delivery_fee
+  = number_to_currency(@restaurant.delivery_fee)
 = link_to 'Edit', edit_restaurant_path(@restaurant)
 |
 \#{link_to 'Back', restaurants_path}

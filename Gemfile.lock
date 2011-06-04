@@ -35,6 +35,8 @@ GEM
     arel (2.1.1)
     bcrypt-ruby (2.1.4-x86-mingw32)
     builder (3.0.0)
+    carrierwave (0.5.4)
+      activesupport (~> 3.0)
     coffee-filter (0.1.0)
       coffee-script (>= 2.2.0)
       haml (>= 3.0.18)
@@ -49,7 +51,6 @@ GEM
       actionpack (>= 2.3.7)
       activesupport (>= 2.3.7)
       i18n (~> 0.4)
-    formtastic_state_select (0.1.0)
     haml (3.1.1)
     haml-rails (0.3.4)
       actionpack (~> 3.0)
@@ -117,10 +118,10 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  carrierwave
   coffee-filter
   coffee-script
   formtastic
-  formtastic_state_select
   haml
   haml-rails
   hpricot
