@@ -12,6 +12,7 @@
     %th
   - @menus.each do |menu|
     %tr
+      %td= menu.category
       %td= menu.description
       %td= menu.menu_image
       %td= menu.qty

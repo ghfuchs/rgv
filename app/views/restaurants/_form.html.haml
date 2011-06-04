@@ -56,6 +56,8 @@
         ['Wisconsin', 'WI'],            |
         ['Wyoming', 'WY']])             |
     = f.input :zipcode, :input_html => { :size => 5}
+    = f.input :hours
+    = f.file_field :logo
     = f.input :pickup, :as => :radio, :collection => ["Y", "N"]
     = f.input :delivery, :as => :radio, :collection => ["Y", "N"]
     = f.input :min_delivery, :input_html => { :size => 9 }

@@ -8,6 +8,10 @@
         - @menu.errors.full_messages.each do |msg|
           %li= msg
   .field
+    = f.label :category
+    %br/
+    = f.text_field :category
+  .field
     = f.label :description
     %br/
     = f.text_field :description

@@ -4,5 +4,7 @@ class Restaurant < ActiveRecord::Base
   validates :name, :address, :city, :state, :presence => true
   validates :name, :uniqueness => true
 
+  mount_uploader :logo, RestLogoUploader
+
 
 end

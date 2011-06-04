@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110603175655) do
+ActiveRecord::Schema.define(:version => 20110604035338) do
 
   create_table "customers", :force => true do |t|
     t.string   "first_name"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20110603175655) do
     t.time     "prep_time"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "category",      :limit => 30
   end
 
   add_index "menus", ["restaurant_id"], :name => "index_menus_on_restaurant_id", :unique => true
@@ -43,17 +44,19 @@ ActiveRecord::Schema.define(:version => 20110603175655) do
   end
 
   create_table "restaurants", :force => true do |t|
-    t.string   "name",         :limit => 40,                                                :null => false
-    t.string   "address",      :limit => 25,                                                :null => false
-    t.string   "city",         :limit => 30,                                                :null => false
-    t.string   "state",        :limit => 2,                                                 :null => false
-    t.integer  "zipcode",      :limit => 5,                                                 :null => false
+    t.string   "name",         :limit => 40,                  :null => false
+    t.string   "address",      :limit => 25,                  :null => false
+    t.string   "city",         :limit => 30,                  :null => false
+    t.string   "state",        :limit => 2,                   :null => false
+    t.integer  "zipcode",      :limit => 5,                   :null => false
     t.string   "pickup",       :limit => 1
     t.string   "delivery",     :limit => 1
-    t.decimal  "min_delivery",               :precision => 8, :scale => 2, :default => 0.0
-    t.decimal  "delivery_fee",               :precision => 8, :scale => 2, :default => 0.0
+    t.decimal  "min_delivery",               :default => 0.0
+    t.decimal  "delivery_fee",               :default => 0.0
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "logo"
+    t.string   "hours",        :limit => 50
   end
 
 end
