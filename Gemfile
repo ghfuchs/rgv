@@ -12,8 +12,10 @@ gem 'sass'
 gem 'coffee-script'
 gem 'uglifier'
 
+
 # version 0.9.0 broke rails
-gem "rake", "0.8.7"
+#gem "rake", "0.8.7"
+gem 'rake'
 
 
 gem 'jquery-rails'
@@ -21,6 +23,7 @@ gem 'haml'
 gem 'haml-rails'
 gem 'coffee-filter'
 gem 'formtastic'
+gem 'devise'
 
 gem 'ruby_parser'
 gem 'hpricot'

@@ -44,6 +44,10 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.1.1)
+    devise (1.3.4)
+      bcrypt-ruby (~> 2.1.2)
+      orm_adapter (~> 0.0.3)
+      warden (~> 1.0.3)
     erubis (2.7.0)
     execjs (1.0.0)
       multi_json (~> 1.0)
@@ -69,6 +73,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.16)
     multi_json (1.0.3)
+    orm_adapter (0.0.4)
     polyglot (0.3.1)
     rack (1.3.0)
     rack-cache (1.0.2)
@@ -113,6 +118,8 @@ GEM
     uglifier (0.5.4)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
+    warden (1.0.3)
+      rack (>= 1.0.0)
 
 PLATFORMS
   x86-mingw32
@@ -121,13 +128,14 @@ DEPENDENCIES
   carrierwave
   coffee-filter
   coffee-script
+  devise
   formtastic
   haml
   haml-rails
   hpricot
   jquery-rails
   rails (= 3.1.0rc1)
-  rake (= 0.8.7)
+  rake
   ruby_parser
   sass
   sqlite3

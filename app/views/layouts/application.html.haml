@@ -12,3 +12,6 @@
   %body
     = yield
     = debug(params) if Rails.env.development?
+
+%p.notice= notice
+%p.alert= alert
