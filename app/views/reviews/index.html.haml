@@ -1,0 +1,19 @@
+%h1 Listing reviews
+
+%table
+  %tr
+    %th Restaurant
+    %th
+    %th
+    %th
+
+  - @reviews.each do |review|
+    %tr
+      %td= review.restaurant_id
+      %td= link_to 'Show', review
+      %td= link_to 'Edit', edit_review_path(review)
+      %td= link_to 'Destroy', review, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Review', new_review_path

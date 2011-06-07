@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110605032630) do
+ActiveRecord::Schema.define(:version => 20110607054347) do
 
   create_table "customers", :force => true do |t|
     t.string   "first_name"
@@ -57,6 +57,16 @@ ActiveRecord::Schema.define(:version => 20110605032630) do
     t.datetime "updated_at"
     t.string   "logo"
     t.string   "hours",        :limit => 50
+  end
+
+  create_table "reviews", :force => true do |t|
+    t.string   "restaurant_id",           :limit => 8
+    t.string   "customer_id",             :limit => 8
+    t.string   "rating",                  :limit => 5
+    t.string   "review",                  :limit => 60
+    t.date     "date_visited_restaurant"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|

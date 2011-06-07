@@ -29,6 +29,7 @@ gem 'ruby_parser'
 gem 'hpricot'
 #gem 'rmagick'
 gem 'carrierwave'
+gem 'activemerchant'
 
 # Use unicorn as the web server
 # gem 'unicorn'

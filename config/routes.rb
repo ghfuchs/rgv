@@ -1,4 +1,6 @@
 Rgv::Application.routes.draw do
+  resources :reviews
+
   devise_for :users
 
   root :to => "home#index"
