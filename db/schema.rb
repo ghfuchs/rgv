@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110607054347) do
+ActiveRecord::Schema.define(:version => 20110607160605) do
 
   create_table "customers", :force => true do |t|
     t.string   "first_name"
@@ -56,7 +56,14 @@ ActiveRecord::Schema.define(:version => 20110607054347) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "logo"
-    t.string   "hours",        :limit => 50
+    t.string   "mon_hours",    :limit => 30
+    t.string   "tue_hours",    :limit => 30
+    t.string   "wed_hours",    :limit => 30
+    t.string   "thu_hours",    :limit => 30
+    t.string   "fri_hours",    :limit => 30
+    t.string   "sat_hours",    :limit => 30
+    t.string   "sun_hours",    :limit => 30
+    t.string   "description"
   end
 
   create_table "reviews", :force => true do |t|

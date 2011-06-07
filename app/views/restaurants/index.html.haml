@@ -2,11 +2,19 @@
 %table
   %tr
     %th Name
+    %th Description
     %th Address
     %th City
     %th State
     %th Zipcode
-    %th Hours
+    %th Mon. Hours
+    %th Tue. Hours
+    %th Wed. Hours
+    %th Thu. Hours
+    %th Fri. Hours
+    %th Sat. Hours
+    %th Sun. Hours
+    %th Logo
     %th Pickup
     %th Delivery
     %th Min delivery
@@ -17,11 +25,19 @@
   - @restaurants.each do |restaurant|
     %tr
       %td= restaurant.name
+      %td= restaurant.description
       %td= restaurant.address
       %td= restaurant.city
       %td= restaurant.state
       %td= restaurant.zipcode
-      %td= restaurant.hours
+      %td= restaurant.mon_hours
+      %td= restaurant.tue_hours
+      %td= restaurant.wed_hours
+      %td= restaurant.thu_hours
+      %td= restaurant.fri_hours
+      %td= restaurant.sat_hours
+      %td= restaurant.sun_hours
+      %td= restaurant.logo
       %td= restaurant.pickup
       %td= restaurant.delivery
       %td= number_to_currency(restaurant.min_delivery)

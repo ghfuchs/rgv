@@ -1,5 +1,6 @@
 =semantic_form_for @restaurant do |f|
     = f.input :name, :input_html => { :size => 40}
+    = f.input :description
     = f.input :address, :input_html => { :size => 25}
     = f.input :city, :input_html => { :size => 30}
     = f.select(:state, [  |
@@ -56,7 +57,13 @@
         ['Wisconsin', 'WI'],            |
         ['Wyoming', 'WY']])             |
     = f.input :zipcode, :input_html => { :size => 5}
-    = f.input :hours
+    = f.input :mon_hours
+    = f.input :tue_hours
+    = f.input :wed_hours
+    = f.input :thu_hours
+    = f.input :fri_hours
+    = f.input :sat_hours
+    = f.input :sun_hours
     = f.file_field :logo
     = f.input :pickup, :as => :radio, :collection => ["Y", "N"]
     = f.input :delivery, :as => :radio, :collection => ["Y", "N"]
