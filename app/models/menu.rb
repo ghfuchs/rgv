@@ -2,7 +2,7 @@ class Menu < ActiveRecord::Base
   attr_accessible :menu_image
   belongs_to :Restaurant
   has_many :Orders
-#  validates :price, :numericality => {:greater_than_or_equal_to => 0.01}
+  validates :price, :numericality => {:greater_than_or_equal_to => 0.01}
 #  validates :sp_price, :numericality => {:greater_than_or_equal_to => 0.01}
   validates :menu_image, :format => {
     :with => %r{\.(gif|jpg|png)$}i,

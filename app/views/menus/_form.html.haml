@@ -1,39 +1,13 @@
-= form_for @menu, :html => {:multipart => true} do |f|
-  - if @menu.errors.any?
-    #error_explanation
-      %h2
-        = pluralize(@menu.errors.count, "error")
-        prohibited this menu from being saved:
-      %ul
-        - @menu.errors.full_messages.each do |msg|
-          %li= msg
-  .field
-    = f.label :category
-    %br/
-    = f.text_field :category
-  .field
-    = f.label :description
-    %br/
-    = f.text_field :description
-  .field
-    = f.label :menu_image
-    %br/
-    = f.file_field :menu_image
-  .field
-    = f.label :qty
-    %br/
-    = f.text_field :qty
-  .field
-    = f.label :price
-    %br/
-    = f.text_field :price
-  .field
-    = f.label :sp_price
-    %br/
-    = f.text_field :sp_price
-  .field
-    = f.label :prep_time
-    %br/
-    = f.text_field :prep_time
-  .actions
-    = f.submit
+=semantic_form_for @menu, :html => {:multipart => true} do |f|
+    = f.input :category, :as => :select, :collection => MenuCategory.all
+    = f.input :description, :input_html => { :size => 40}
+    = f.input :menu_image, :input_html => { :size => 25}
+    = f.input :qty, :input_html => { :size => 02}
+    = f.input :price, :input_html => { :size => 9 }
+    = f.input :sp_price, :input_html => { :size => 9 }
+    = f.input :prep_time
+    = f.commit_button
+
+
+
+

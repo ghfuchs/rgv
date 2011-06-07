@@ -1,4 +1,6 @@
 Rgv::Application.routes.draw do
+  resources :menu_categories
+
   resources :reviews
 
   devise_for :users
