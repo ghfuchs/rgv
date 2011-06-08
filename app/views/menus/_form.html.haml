@@ -1,7 +1,23 @@
 =semantic_form_for @menu, :html => {:multipart => true} do |f|
-    = f.select :category, :collection => Category.find(:all)
+    = f.input :restaurant_id
+    = #f.select :category, :collection => Category.find(:all)
+    -#TODO change into a select_tag
+    = f.select(:category, [             |
+        ['Breakfast'],                  |
+        ['Lunch'],                      |
+        ['Dinner'],                     |
+        ['Appetizers'],                 |
+        ['Dessert'],                    |
+        ['Beverages'],                  |
+        ['Salads'],                     |
+        ['Burgers'],                    |
+        ['Pasta'],                      |
+        ['Pizza'],                      |
+        ['Steaks'],                     |
+        ['Seafood'],                    |
+        ['Coffee']])                    |
     = f.input :description, :input_html => { :size => 40}
-    = f.input :menu_image, :input_html => { :size => 25}
+    = f.file_field :menu_image
     = f.input :qty, :input_html => { :size => 02}
     = f.input :price, :input_html => { :size => 9 }
     = f.input :sp_price, :input_html => { :size => 9 }

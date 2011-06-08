@@ -10,6 +10,7 @@ class Restaurant < ActiveRecord::Base
             :message => 'must be a URL for GIF, JPG or PNG image.'
             }
   validates :pickup, :inclusion => OPTION_TYPES
+#  validates_postal_code_for :zipcode,
 
   mount_uploader :logo, RestLogoUploader
 

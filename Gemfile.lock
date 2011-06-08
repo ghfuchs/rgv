@@ -41,6 +41,7 @@ GEM
     braintree (2.10.0)
       builder
     builder (3.0.0)
+    cancan (1.6.5)
     carrierwave (0.5.4)
       activesupport (~> 3.0)
     coffee-filter (0.1.1)
@@ -132,6 +133,7 @@ PLATFORMS
 
 DEPENDENCIES
   activemerchant
+  cancan
   carrierwave
   coffee-filter
   coffee-script

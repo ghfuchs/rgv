@@ -24,6 +24,8 @@ gem 'haml-rails'
 gem 'coffee-filter'
 gem 'formtastic'
 gem 'devise'
+gem 'cancan'
+#gem 'format_for_extensions'
 
 gem 'ruby_parser'
 gem 'hpricot'

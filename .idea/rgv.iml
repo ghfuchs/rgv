@@ -18,6 +18,12 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="cancan" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="carrierwave" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
@@ -156,13 +162,15 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] jquery-rails (v1.0.9, C:/Ruby192/lib/ruby/gems/1.9.1/gems/jquery-rails-1.0.9)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] sass (v3.1.2, C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.1.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rake (v0.9.1, C:/Ruby192/lib/ruby/gems/1.9.1/gems/rake-0.9.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v3.0.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/builder-3.0.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activemerchant (v1.15.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/activemerchant-1.15.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] braintree (v2.10.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/braintree-2.10.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] mail (v2.3.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/mail-2.3.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] activemodel (v3.1.0.rc1, C:/Ruby192/lib/ruby/gems/1.9.1/gems/activemodel-3.1.0.rc1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] hike (v1.0.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/hike-1.0.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] erubis (v2.7.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/erubis-2.7.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] sprockets (v2.0.0.beta.9, C:/Ruby192/lib/ruby/gems/1.9.1/gems/sprockets-2.0.0.beta.9)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack-test (v0.6.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-test-0.6.0)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v3.0.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/builder-3.0.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] arel (v2.1.1, C:/Ruby192/lib/ruby/gems/1.9.1/gems/arel-2.1.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.3.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack-mount (v0.8.1, C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.1)" level="application" />
@@ -173,8 +181,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] tilt (v1.3.2, C:/Ruby192/lib/ruby/gems/1.9.1/gems/tilt-1.3.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] mime-types (v1.16, C:/Ruby192/lib/ruby/gems/1.9.1/gems/mime-types-1.16)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack-cache (v1.0.2, C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-cache-1.0.2)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] activemerchant (v1.15.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/activemerchant-1.15.0)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] braintree (v2.10.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/braintree-2.10.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] cancan (v1.6.5, C:/Ruby192/lib/ruby/gems/1.9.1/gems/cancan-1.6.5)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] sqlite3-ruby (v1.3.3, C:/Ruby192/lib/ruby/gems/1.9.1/gems/sqlite3-ruby-1.3.3)" level="application" />
   </component>
 </module>

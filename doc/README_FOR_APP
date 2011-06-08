@@ -2,4 +2,8 @@ Use this README file to introduce your application and point to useful places in
 Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
 06/06/2011  Added Formtastic, Devise, carrierwave, activemerchant.
 06/06/2011 Start work on Owner(Restaurant) detailed validations
+06/07/2011 Installed 'format_for_extensions' replaces ‘validates_format_of'
 06/07/2011 Start work on Owner(Menu) detailed validations
+06/08/2011 Before working on Owner, need to resolve issue with connecting User(devise) with Restaurant
+           Installed 'cancan' to implement authorization and possible roles
+06/08/2011 Resolve parent-child relationships in creating 'child' records
