@@ -1,2 +1,2 @@
-module MenuCategoriesHelper
+module CategoriesHelper
 end
