@@ -1,5 +1,5 @@
 =semantic_form_for @menu, :html => {:multipart => true} do |f|
-    = f.input :category, :as => :select, :collection => MenuCategory.all
+    = f.input :category,  :as => :select,      :collection => @category
     = f.input :description, :input_html => { :size => 40}
     = f.input :menu_image, :input_html => { :size => 25}
     = f.input :qty, :input_html => { :size => 02}
