@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Menu id:
+  = @order_item.menu_id
+%p
+  %b Qty:
+  = @order_item.qty
+%p
+  %b Special instructions:
+  = @order_item.special_instructions
+%p
+  %b Prepared:
+  = @order_item.prepared
+
+= link_to 'Edit', edit_order_item_path(@order_item)
+\|
+= link_to 'Back', order_items_path

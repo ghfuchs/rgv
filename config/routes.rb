@@ -1,4 +1,6 @@
 Rgv::Application.routes.draw do
+  resources :order_items
+
   devise_for :admins
   devise_for :users
 

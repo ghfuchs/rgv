@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110608234839) do
+ActiveRecord::Schema.define(:version => 20110613042059) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -59,36 +59,47 @@ ActiveRecord::Schema.define(:version => 20110608234839) do
 
   add_index "menus", ["restaurant_id"], :name => "index_menus_on_restaurant_id", :unique => true
 
+  create_table "order_items", :force => true do |t|
+    t.integer  "menu_id"
+    t.integer  "qty"
+    t.string   "special_instructions"
+    t.string   "prepared"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "orders", :force => true do |t|
     t.integer  "restaurant_id", :limit => 8
     t.integer  "customer_id",   :limit => 8
-    t.integer  "order_id",      :limit => 10
-    t.string   "menu_id",       :limit => 10
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "restaurants", :force => true do |t|
-    t.string   "name",         :limit => 40,                  :null => false
-    t.string   "address",      :limit => 25,                  :null => false
-    t.string   "city",         :limit => 30,                  :null => false
-    t.string   "state",        :limit => 2,                   :null => false
-    t.integer  "zipcode",      :limit => 5,                   :null => false
-    t.string   "pickup",       :limit => 1
-    t.string   "delivery",     :limit => 1
-    t.decimal  "min_delivery",               :default => 0.0
-    t.decimal  "delivery_fee",               :default => 0.0
+    t.string   "name",                  :limit => 40,                  :null => false
+    t.string   "address",               :limit => 25,                  :null => false
+    t.string   "city",                  :limit => 30,                  :null => false
+    t.string   "state",                 :limit => 2,                   :null => false
+    t.integer  "zipcode",               :limit => 5,                   :null => false
+    t.string   "pickup",                :limit => 1
+    t.string   "delivery",              :limit => 1
+    t.decimal  "min_delivery",                        :default => 0.0
+    t.decimal  "delivery_fee",                        :default => 0.0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "logo"
-    t.string   "mon_hours",    :limit => 30
-    t.string   "tue_hours",    :limit => 30
-    t.string   "wed_hours",    :limit => 30
-    t.string   "thu_hours",    :limit => 30
-    t.string   "fri_hours",    :limit => 30
-    t.string   "sat_hours",    :limit => 30
-    t.string   "sun_hours",    :limit => 30
+    t.string   "mon_hours",             :limit => 30
+    t.string   "tue_hours",             :limit => 30
+    t.string   "wed_hours",             :limit => 30
+    t.string   "thu_hours",             :limit => 30
+    t.string   "fri_hours",             :limit => 30
+    t.string   "sat_hours",             :limit => 30
+    t.string   "sun_hours",             :limit => 30
     t.string   "description"
+    t.string   "website"
+    t.decimal  "image_carousel_limit"
+    t.decimal  "image_carousel_count"
+    t.string   "payment_type_accepted"
   end
 
   create_table "reviews", :force => true do |t|

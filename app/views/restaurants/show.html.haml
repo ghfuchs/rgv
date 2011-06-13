@@ -53,6 +53,19 @@
 %p
   %b Delivery fee:
   = number_to_currency(@restaurant.delivery_fee)
+%p
+  %b Pickup:
+  = @restaurant.pickup
+%p
+  %b Website:
+  = @restaurant.website
+%p
+  %b Image Carousel Limit:
+  = @restaurant.image_carousel_limit
+%p
+  %b Image Carousel Count:
+  = @restaurant.image_carousel_count
+
 = link_to 'Edit', edit_restaurant_path(@restaurant)
 |
 \#{link_to 'Back', restaurants_path}

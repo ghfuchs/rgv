@@ -1,0 +1,25 @@
+%h1 Listing order_items
+
+%table
+  %tr
+    %th Menu id
+    %th Qty
+    %th Special instructions
+    %th Prepared
+    %th
+    %th
+    %th
+
+  - @order_items.each do |order_item|
+    %tr
+      %td= order_item.menu_id
+      %td= order_item.qty
+      %td= order_item.special_instructions
+      %td= order_item.prepared
+      %td= link_to 'Show', order_item
+      %td= link_to 'Edit', edit_order_item_path(order_item)
+      %td= link_to 'Destroy', order_item, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Order item', new_order_item_path
