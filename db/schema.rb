@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110613042059) do
+ActiveRecord::Schema.define(:version => 20110614155858) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -73,6 +73,8 @@ ActiveRecord::Schema.define(:version => 20110613042059) do
     t.integer  "customer_id",   :limit => 8
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.date     "pickup_date"
+    t.time     "pickup_time"
   end
 
   create_table "restaurants", :force => true do |t|
