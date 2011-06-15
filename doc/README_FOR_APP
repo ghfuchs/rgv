@@ -14,5 +14,6 @@ Run "rake doc:app" to generate API documentation for your models, controllers, h
 06/15/2011 created sub-folder in db folder to hold migration files, Rubymine was reading incorrect file
            on a rake:migrate
 06/15/2001 TODO remove cancan if not used
+06/15/2011 TODO take a look at Jquery lightbox to display menu-item images
 
 
