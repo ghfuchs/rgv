@@ -11,4 +11,8 @@ Run "rake doc:app" to generate API documentation for your models, controllers, h
 06/11/2011 TODO Resolve sign in for employees, <no email?>
 06/14/2011 TODO expand 'special instructions' in menu_items to to have restaurant-owner desriptions
            TODO and options. e.g. rare, medium, medium well, well-done
+06/15/2011 created sub-folder in db folder to hold migration files, Rubymine was reading incorrect file
+           on a rake:migrate
+06/15/2001 TODO remove cancan if not used
+
 

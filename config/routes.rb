@@ -1,14 +1,16 @@
 Rgv::Application.routes.draw do
-  resources :order_items
+
+  root :to => "home#index"
 
   devise_for :admins
+
   devise_for :users
+
+  resources :order_items
 
   resources :categories
 
   resources :reviews
-
-  root :to => "home#index"
 
   resources :orders
 
