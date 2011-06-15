@@ -9,5 +9,6 @@ Run "rake doc:app" to generate API documentation for your models, controllers, h
 06/08/2011 Added 'Admin' to 'devise' to POSSIBLY allow seperate log-ins for admin and users
 06/08/2011 TODO Resolve parent-child relationships in creating 'child' records
 06/11/2011 TODO Resolve sign in for employees, <no email?>
-06/14/2011 TODO possibly expand menu_items to expand 'special_instructions' to include menu item
-           TODO e.g. rare, medium, well done
+06/14/2011 TODO expand 'special instructions' in menu_items to to have restaurant-owner desriptions
+           TODO and options. e.g. rare, medium, medium well, well-done
+
