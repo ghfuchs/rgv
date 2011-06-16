@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0rc1'
+gem 'rails', '3.1.0rc3'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -25,6 +25,8 @@ gem 'coffee-filter'
 gem 'formtastic'
 gem 'devise'
 gem 'cancan'
+#gem 'compass'
+#gem 'compass', :git => 'git://github.com/chriseppstein/compass.git', :branch => 'rails31'
 #gem 'format_for_extensions'
 
 gem 'ruby_parser'

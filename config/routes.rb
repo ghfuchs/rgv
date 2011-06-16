@@ -1,5 +1,7 @@
 Rgv::Application.routes.draw do
 
+  get "main/home"
+
   devise_for :admins
 
   devise_for :users
@@ -75,6 +77,6 @@ Rgv::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
 
-  root :to => "home#index"
+  root :to => "main#home"
 
 end

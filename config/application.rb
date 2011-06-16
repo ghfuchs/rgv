@@ -49,5 +49,11 @@ module Rgv
 
     # Enable the asset pipeline
     config.assets.enabled = true
+
+    # Enable sass to be generated
+    config.generators.stylesheet_engine = :sass
+
   end
+
+
 end
