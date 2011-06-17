@@ -1,5 +1,6 @@
 class Restaurant < ActiveRecord::Base
   OPTION_TYPES = 'Y', "N"
+  belongs_to :admin
   has_many :menus
   has_many :orders
   has_many :reviews
@@ -9,7 +10,6 @@ class Restaurant < ActiveRecord::Base
             :with => %r{\.(gif|jpg|png)$}i,
             :message => 'must be a URL for GIF, JPG or PNG image.'
             }
-  validates :pickup, :inclusion => OPTION_TYPES
 #  validates_postal_code_for :zipcode,
 
   mount_uploader :logo, RestLogoUploader

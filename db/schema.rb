@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110616174854) do
+ActiveRecord::Schema.define(:version => 20110617032145) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -81,8 +81,8 @@ ActiveRecord::Schema.define(:version => 20110616174854) do
     t.string   "city",                  :limit => 30,                  :null => false
     t.string   "state",                 :limit => 2,                   :null => false
     t.integer  "zipcode",               :limit => 5,                   :null => false
-    t.string   "pickup",                :limit => 1
-    t.string   "delivery",              :limit => 1
+    t.boolean  "pickup",                :limit => 1
+    t.boolean  "delivery",              :limit => 1
     t.decimal  "min_delivery",                        :default => 0.0
     t.decimal  "delivery_fee",                        :default => 0.0
     t.datetime "created_at"
@@ -100,6 +100,7 @@ ActiveRecord::Schema.define(:version => 20110616174854) do
     t.decimal  "image_carousel_limit"
     t.decimal  "image_carousel_count"
     t.string   "payment_type_accepted"
+    t.integer  "admin_id"
   end
 
   create_table "reviews", :force => true do |t|
