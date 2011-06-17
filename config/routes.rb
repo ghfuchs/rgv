@@ -2,7 +2,12 @@ Rgv::Application.routes.draw do
 
   get "main/home"
 
-  devise_for :admins
+#  devise_for :admins
+  devise_for :admins, :controllers => { :registrations => "registrations" }
+
+  namespace :admin do
+    root :to => "restaurants#show"
+end
 
 
   devise_for :users

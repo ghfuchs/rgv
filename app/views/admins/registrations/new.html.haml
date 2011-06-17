@@ -1,0 +1,169 @@
+%h2 Sign up
+- resource.build_restaurant
+= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+  = devise_error_messages!
+  %p
+    = f.label :email
+    %br/
+    = f.email_field :email
+  %p
+    = f.label :password
+    %br/
+    = f.password_field :password
+  %p
+    = f.label :password_confirmation
+    %br/
+    = f.password_field :password_confirmation
+  = f.fields_for :restaurant do |restaurant_form|
+    %p
+      = restaurant_form.label :name
+      %br/
+      = restaurant_form.text_field :name
+    %p
+      = restaurant_form.label :address
+      %br/
+      = restaurant_form.text_field :address
+    %p
+      = restaurant_form.label :city
+      %br/
+      = restaurant_form.text_field :city
+    %p
+      = restaurant_form.label :state
+      %br/
+      =restaurant_form.select(:state, [  |
+      ['Select a State', 'None'],     |
+      ['Alabama', 'AL'],              |
+      ['Alaska', 'AK'],               |
+      ['Arizona', 'AZ'],              |
+      ['Arkansas', 'AR'],             |
+      ['California', 'CA'],           |
+      ['Colorado', 'CO'],             |
+      ['Connecticut', 'CT'],          |
+      ['Delaware', 'DE'],             |
+      ['District Of Columbia', 'DC'], |
+      ['Florida', 'FL'],              |
+      ['Georgia', 'GA'],              |
+      ['Hawaii', 'HI'],               |
+      ['Idaho', 'ID'],                |
+      ['Illinois', 'IL'],             |
+      ['Indiana', 'IN'],              |
+      ['Iowa', 'IA'],                 |
+      ['Kansas', 'KS'],               |
+      ['Kentucky', 'KY'],             |
+      ['Louisiana', 'LA'],            |
+      ['Maine', 'ME'],                |
+      ['Maryland', 'MD'],             |
+      ['Massachusetts', 'MA'],        |
+      ['Michigan', 'MI'],             |
+      ['Minnesota', 'MN'],            |
+      ['Mississippi', 'MS'],          |
+      ['Missouri', 'MO'],             |
+      ['Montana', 'MT'],              |
+      ['Nebraska', 'NE'],             |
+      ['Nevada', 'NV'],               |
+      ['New Hampshire', 'NH'],        |
+      ['New Jersey', 'NJ'],           |
+      ['New Mexico', 'NM'],           |
+      ['New York', 'NY'],             |
+      ['North Carolina', 'NC'],       |
+      ['North Dakota', 'ND'],         |
+      ['Ohio', 'OH'],                 |
+      ['Oklahoma', 'OK'],             |
+      ['Oregon', 'OR'],               |
+      ['Pennsylvania', 'PA'],         |
+      ['Rhode Island', 'RI'],         |
+      ['South Carolina', 'SC'],       |
+      ['South Dakota', 'SD'],         |
+      ['Tennessee', 'TN'],            |
+      ['Texas', 'TX'],                |
+      ['Utah', 'UT'],                 |
+      ['Vermont', 'VT'],              |
+      ['Virginia', 'VA'],             |
+      ['Washington', 'WA'],           |
+      ['West Virginia', 'WV'],        |
+      ['Wisconsin', 'WI'],            |
+      ['Wyoming', 'WY']])             |
+    %p
+      = restaurant_form.label :zipcode
+      %br/
+      = restaurant_form.text_field :zipcode
+    %p
+      = restaurant_form.label :pickup
+      %br/
+      %p
+        = restaurant_form.radio_button :pickup, true
+        = restaurant_form.label :pickup, "Yes"
+        %p
+          = restaurant_form.radio_button :pickup, false
+          = restaurant_form.label :pickup, "No"
+        %p
+          = restaurant_form.label :delivery
+          %br/
+          %p
+            = restaurant_form.radio_button :delivery, true
+            = restaurant_form.label :delivery, "Yes"
+            %p
+              = restaurant_form.radio_button :delivery, false
+              = restaurant_form.label :delivery, "No"
+            %p
+              = restaurant_form.label :min_delivery
+              %br/
+              = restaurant_form.text_field :min_delivery
+            %p
+              = restaurant_form.label :delivery_fee
+              %br/
+              = restaurant_form.text_field :delivery_fee
+            %p
+              = restaurant_form.label :logo
+              %br/
+              = restaurant_form.file_field :logo
+            %p
+              = restaurant_form.label :mon_hours
+              %br/
+              = restaurant_form.text_field :mon_hours
+            %p
+              = restaurant_form.label :tue_hours
+              %br/
+              = restaurant_form.text_field :tue_hours
+            %p
+              = restaurant_form.label :wed_hours
+              %br/
+              = restaurant_form.text_field :wed_hours
+            %p
+              = restaurant_form.label :thu_hours
+              %br/
+              = restaurant_form.text_field :thu_hours
+            %p
+              = restaurant_form.label :fri_hours
+              %br/
+              = restaurant_form.text_field :fri_hours
+            %p
+              = restaurant_form.label :sat_hours
+              %br/
+              = restaurant_form.text_field :sat_hours
+            %p
+              = restaurant_form.label :sun_hours
+              %br/
+              = restaurant_form.text_field :sun_hours
+            %p
+              = restaurant_form.label :description
+              %br/
+              = restaurant_form.text_field :description
+            %p
+              = restaurant_form.label :website
+              %br/
+              = restaurant_form.text_field :website
+            %p
+              = restaurant_form.label :image_carousel_limit
+              %br/
+              = restaurant_form.text_field :image_carousel_limit
+            %p
+              = restaurant_form.label :image_carousel_count
+              %br/
+              = restaurant_form.text_field :image_carousel_count
+            %p
+              = restaurant_form.label :payment_type_accepted
+              %br/
+              = restaurant_form.text_field :payment_type_accepted
+  %p= f.submit "Sign up"
+= render :partial => "devise/shared/links"
