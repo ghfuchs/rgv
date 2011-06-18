@@ -36,7 +36,32 @@ class RestaurantsController < ApplicationController
 
   # GET /restaurants/1/edit
   def edit
-    @restaurant = Restaurant.find(params[:id])
+#   @restaurant = Restaurant.find(params[:id])
+    @restaurant = Restaurant.find(current_admin)
+  end
+
+  # GET /restaurants/1/edit_name
+  def edit_name
+#   @restaurant = Restaurant.find(params[:id])
+    @restaurant = Restaurant.find(current_admin)
+  end
+
+  # GET /restaurants/1/edit_logo
+  def edit_logo
+#   @restaurant = Restaurant.find(params[:id])
+    @restaurant = Restaurant.find(current_admin)
+  end
+
+      # GET /restaurants/1/edit_hours
+  def edit_hours
+#   @restaurant = Restaurant.find(params[:id])
+    @restaurant = Restaurant.find(current_admin)
+  end
+
+      # GET /restaurants/1/edit_misc
+  def edit_misc
+#   @restaurant = Restaurant.find(params[:id])
+    @restaurant = Restaurant.find(current_admin)
   end
 
   # POST /restaurants
@@ -59,7 +84,8 @@ class RestaurantsController < ApplicationController
   # PUT /restaurants/1
   # PUT /restaurants/1.json
   def update
-    @restaurant = Restaurant.find(params[:id])
+#   @restaurant = Restaurant.find(params[:id])
+    @restaurant = Restaurant.find(current_admin)
 
     respond_to do |format|
       if @restaurant.update_attributes(params[:restaurant])
@@ -75,7 +101,8 @@ class RestaurantsController < ApplicationController
   # DELETE /restaurants/1
   # DELETE /restaurants/1.json
   def destroy
-    @restaurant = Restaurant.find(params[:id])
+#   @restaurant = Restaurant.find(params[:id])
+    @restaurant = Restaurant.find(current_admin)
     @restaurant.destroy
 
     respond_to do |format|

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110617032145) do
+ActiveRecord::Schema.define(:version => 20110618171915) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -97,8 +97,8 @@ ActiveRecord::Schema.define(:version => 20110617032145) do
     t.string   "sun_hours",             :limit => 30
     t.string   "description"
     t.string   "website"
-    t.decimal  "image_carousel_limit"
-    t.decimal  "image_carousel_count"
+    t.integer  "image_carousel_limit"
+    t.integer  "image_carousel_count"
     t.string   "payment_type_accepted"
     t.integer  "admin_id"
   end

@@ -1,5 +1,5 @@
 =semantic_form_for @menu, :html => {:multipart => true} do |f|
-    = f.input :restaurant_id
+
     = #f.select :category, :collection => Category.find(:all)
     -#TODO change into a select_tag
     = f.select(:category, [             |

@@ -3,7 +3,7 @@ class Menu < ActiveRecord::Base
   belongs_to :Restaurant
 #  belongs_to :menu_category
   has_many :Orders
-  validates :price, :numericality => {:greater_than_or_equal_to => 0.01}
+#  validates :price, :numericality => {:greater_than_or_equal_to => 0.01}
 #  validates :sp_price, :numericality => {:greater_than_or_equal_to => 0.01}
   validates :menu_image, :format => {
     :with => %r{\.(gif|jpg|png)$}i,

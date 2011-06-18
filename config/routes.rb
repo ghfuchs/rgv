@@ -21,7 +21,13 @@ end
 
   resources :orders
 
-  resources :restaurants
+# resources :restaurants
+  resources :restaurants do
+    get :edit_name, :on => :member
+    get :edit_hours, :on => :member
+    get :edit_logo, :on => :member
+    get :edit_misc, :on => :member
+end
 
   resources :menus
 

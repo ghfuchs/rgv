@@ -16,6 +16,8 @@ Run "rake doc:app" to generate API documentation for your models, controllers, h
 06/15/2001 TODO remove cancan if not used
 06/15/2011 TODO take a look at Jquery lightbox to display menu-item images
 06/16/2011 TODO determine if a restaurant->order relationship is needed
-06/17/2011 note- had to combine creation of 'restaurant' on views\admins\registration\new
+06/17/2011 note- had to combine creation of 'restaurant' on views\admins\registration\new,
+           flow -- views\admins\registration\new -> views\restaurant\show
+
 
 

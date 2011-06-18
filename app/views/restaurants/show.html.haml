@@ -17,6 +17,10 @@
 %p
   %b Zipcode:
   = @restaurant.zipcode
+
+%p
+  = link_to 'Edit', edit_name_restaurant_path(@restaurant)
+
 %p
   %b Monday Hours:
   = @restaurant.mon_hours
@@ -38,9 +42,17 @@
 %p
   %b Sunday Hours:
   = @restaurant.sun_hours
+
+%p
+  = link_to 'Edit', edit_hours_restaurant_path(@restaurant)
+
 %p
   %b Logo:
   = image_tag(@restaurant.logo)
+
+%p
+  = link_to 'Edit', edit_logo_restaurant_path(@restaurant)
+
 %p
   %b Pickup:
   = @restaurant.pickup
@@ -66,6 +78,10 @@
   %b Image Carousel Count:
   = @restaurant.image_carousel_count
 
-= link_to 'Edit', edit_restaurant_path(@restaurant)
+%p
+= link_to 'Edit', edit_misc_restaurant_path(@restaurant)
+%p
 |
 \#{link_to 'Back', restaurants_path}
+%p
+= link_to 'Menu', menus_path
