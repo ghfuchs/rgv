@@ -9,6 +9,7 @@ gem 'sqlite3'
 
 # Asset template engines
 gem 'sass'
+gem 'sass-rails'
 gem 'coffee-script'
 gem 'uglifier'
 

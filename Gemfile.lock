@@ -109,6 +109,11 @@ GEM
     ruby_parser (2.0.6)
       sexp_processor (~> 3.0)
     sass (3.1.2)
+    sass-rails (3.1.0.rc.2)
+      actionpack (~> 3.1.0.rc1)
+      railties (~> 3.1.0.rc1)
+      sass (>= 3.1.2)
+      sprockets (>= 2.0.0.beta.9)
     sexp_processor (3.0.5)
     sprockets (2.0.0.beta.10)
       hike (~> 1.0)
@@ -147,6 +152,7 @@ DEPENDENCIES
   rake
   ruby_parser
   sass
+  sass-rails
   sqlite3
   turn
   uglifier

@@ -27,6 +27,7 @@ end
     get :edit_hours, :on => :member
     get :edit_logo, :on => :member
     get :edit_misc, :on => :member
+    resources :menus
 end
 
   resources :menus
