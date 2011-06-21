@@ -2,6 +2,7 @@ class Restaurant < ActiveRecord::Base
   OPTION_TYPES = 'Y', "N"
   belongs_to :admin
   has_many :menus
+    accepts_nested_attributes_for :menus
   has_many :orders
   has_many :reviews
   validates :name, :address, :city, :state, :zipcode, :presence => true

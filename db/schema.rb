@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110618171915) do
+ActiveRecord::Schema.define(:version => 20110621184030) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -50,13 +50,11 @@ ActiveRecord::Schema.define(:version => 20110618171915) do
     t.integer  "qty"
     t.decimal  "price",                       :default => 0.0, :null => false
     t.decimal  "sp_price",                    :default => 0.0
-    t.time     "prep_time"
+    t.integer  "prep_time"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "category",      :limit => 30
   end
-
-  add_index "menus", ["restaurant_id"], :name => "index_menus_on_restaurant_id", :unique => true
 
   create_table "order_items", :force => true do |t|
     t.integer "menu_id"

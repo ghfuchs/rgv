@@ -41,7 +41,10 @@ class MenusController < ApplicationController
   # POST /menus.json
   def create
     @menu = Menu.new(params[:menu])
+    @menu.restaurant_id = 2
+#   @menu.restaurant_id = @restaurant["restaurant_id"]
 #   @menu = current_admin.menus.build(params[:menu])
+
 
     respond_to do |format|
       if @menu.save
