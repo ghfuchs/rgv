@@ -18,6 +18,8 @@ Run "rake doc:app" to generate API documentation for your models, controllers, h
 06/16/2011 TODO determine if a restaurant->order relationship is needed
 06/17/2011 note- had to combine creation of 'restaurant' on views\admins\registration\new,
            flow -- views\admins\registration\new -> views\restaurant\show
+06/22/2011 #note- after authentication, flow is directed to restaurants#show
+           this could change to restaurant#index if admin is allowed to have more than one restaurant
 
 
 

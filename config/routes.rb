@@ -6,6 +6,8 @@ Rgv::Application.routes.draw do
   devise_for :admins, :controllers => { :registrations => "registrations" }
 
   namespace :admin do
+    #note- after authentication, flow is directed to restaurants#show
+    #      this could change to restaurant#index if admin is allowed to have more than one restaurant
     root :to => "restaurants#show"
 end
 
@@ -21,16 +23,16 @@ end
 
   resources :orders
 
+  #resources :menus
+
 # resources :restaurants
-  resources :restaurants do
+  resources :restaurants, :shallow => true do
     get :edit_name, :on => :member
     get :edit_hours, :on => :member
     get :edit_logo, :on => :member
     get :edit_misc, :on => :member
     resources :menus
 end
-
-  resources :menus
 
   resources :customers
 
