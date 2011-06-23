@@ -23,7 +23,7 @@ end
 
   resources :orders
 
-  #resources :menus
+  resources :menus
 
 # resources :restaurants
   resources :restaurants, :shallow => true do

@@ -1,6 +1,9 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0rc3'
+gem 'rails', '3.1.0.rc4'
+
+# sprockets 2.0.0.beta.11 was causing a break in the application.css
+gem 'sprockets', '= 2.0.0.beta.10'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -8,27 +11,15 @@ gem 'rails', '3.1.0rc3'
 gem 'sqlite3'
 
 # Asset template engines
-gem 'sass'
-gem 'sass-rails'
+gem 'sass-rails', "~> 3.1.0.rc"
 gem 'coffee-script'
 gem 'uglifier'
-
-
-# version 0.9.0 broke rails
-#gem "rake", "0.8.7"
-gem 'rake'
-
 
 gem 'jquery-rails'
 gem 'haml'
 gem 'haml-rails'
-gem 'coffee-filter'
 gem 'formtastic'
 gem 'devise'
-gem 'cancan'
-#gem 'compass'
-#gem 'compass', :git => 'git://github.com/chriseppstein/compass.git', :branch => 'rails31'
-#gem 'format_for_extensions'
 
 gem 'ruby_parser'
 gem 'hpricot'
