@@ -18,19 +18,7 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="cancan" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
-      </requirement>
-      <source from="Gemfile" />
-    </requirement>
-    <requirement>
-      <requirement>
         <dependency name="carrierwave" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
-      </requirement>
-      <source from="Gemfile" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="coffee-filter" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
@@ -78,13 +66,7 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="rails" version="3.1.0rc4" bound="EQUAL" git="false" path="false" doRequire="true" />
-      </requirement>
-      <source from="Gemfile" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="rake" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="rails" version="3.1.0.rc4" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
@@ -96,13 +78,13 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="sass" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="sass-rails" version="3.1.0.rc" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="sass-rails" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="sprockets" version="2.0.0.beta.10" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
@@ -135,8 +117,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="ruby_parser (v2.0.6, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v2.0.0.beta.10, Ruby SDK 1.9.2-p180) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.3.3, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activeresource (v3.1.0.rc4, Ruby SDK 1.9.2-p180) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.3.3, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="warden (v1.0.4, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.0.0, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v3.1.0.rc4, Ruby SDK 1.9.2-p180) [gem]" level="application" />
@@ -159,6 +141,7 @@
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="formtastic (v1.2.4, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activemerchant (v1.15.0, Ruby SDK 1.9.2-p180) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.1.pre.5, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.2.0, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.0, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v2.1.1, Ruby SDK 1.9.2-p180) [gem]" level="application" />
@@ -171,8 +154,8 @@
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.14.6, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hpricot (v0.8.4, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-ssl (v1.3.2, Ruby SDK 1.9.2-p180) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="turn (v0.8.2, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="carrierwave (v0.5.4, Ruby SDK 1.9.2-p180) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="turn (v0.8.2, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v3.6.1, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v3.1.0.rc.2, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sexp_processor (v3.0.5, Ruby SDK 1.9.2-p180) [gem]" level="application" />
@@ -181,10 +164,67 @@
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v3.1.0.rc4, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v1.3.2, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.16, Ruby SDK 1.9.2-p180) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rack-cache (v1.0.2, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="haml-rails (v0.3.4, Ruby SDK 1.9.2-p180) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="execjs (v1.2.0, Ruby SDK 1.9.2-p180) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-cache (v1.0.2, Ruby SDK 1.9.2-p180) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.6.0, Ruby SDK 1.9.2-p180) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="execjs (v1.2.0, Ruby SDK 1.9.2-p180) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mail (v2.3.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/mail-2.3.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] erubis (v2.7.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/erubis-2.7.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v1.1.pre.5, C:/Ruby192/lib/ruby/gems/1.9.1/gems/bundler-1.1.pre.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack-test (v0.6.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-test-0.6.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activeresource (v3.1.0.rc4, C:/Ruby192/lib/ruby/gems/1.9.1/gems/activeresource-3.1.0.rc4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v3.0.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/builder-3.0.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] railties (v3.1.0.rc4, C:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.0.rc4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] arel (v2.1.1, C:/Ruby192/lib/ruby/gems/1.9.1/gems/arel-2.1.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.3.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rails (v3.1.0.rc4, C:/Ruby192/lib/ruby/gems/1.9.1/gems/rails-3.1.0.rc4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sprockets (v2.0.0.beta.11, C:/Ruby192/lib/ruby/gems/1.9.1/gems/sprockets-2.0.0.beta.11)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v3.1.0.rc4, C:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0.rc4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bcrypt-ruby (v2.1.4, C:/Ruby192/lib/ruby/gems/1.9.1/gems/bcrypt-ruby-2.1.4-x86-mingw32)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activerecord (v3.1.0.rc4, C:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0.rc4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack-mount (v0.8.1, C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] polyglot (v0.3.1, C:/Ruby192/lib/ruby/gems/1.9.1/gems/polyglot-0.3.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] multi_json (v1.0.3, C:/Ruby192/lib/ruby/gems/1.9.1/gems/multi_json-1.0.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] treetop (v1.4.9, C:/Ruby192/lib/ruby/gems/1.9.1/gems/treetop-1.4.9)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] thor (v0.14.6, C:/Ruby192/lib/ruby/gems/1.9.1/gems/thor-0.14.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] actionmailer (v3.1.0.rc4, C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionmailer-3.1.0.rc4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack-ssl (v1.3.2, C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-ssl-1.3.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rdoc (v3.6.1, C:/Ruby192/lib/ruby/gems/1.9.1/gems/rdoc-3.6.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] tzinfo (v0.3.28, C:/Ruby192/lib/ruby/gems/1.9.1/gems/tzinfo-0.3.28)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rake (v0.9.2, C:/Ruby192/lib/ruby/gems/1.9.1/gems/rake-0.9.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activemodel (v3.1.0.rc4, C:/Ruby192/lib/ruby/gems/1.9.1/gems/activemodel-3.1.0.rc4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] hike (v1.1.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/hike-1.1.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] tilt (v1.3.2, C:/Ruby192/lib/ruby/gems/1.9.1/gems/tilt-1.3.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mime-types (v1.16, C:/Ruby192/lib/ruby/gems/1.9.1/gems/mime-types-1.16)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack-cache (v1.0.2, C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-cache-1.0.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] actionpack (v3.1.0.rc4, C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0.rc4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] i18n (v0.6.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/i18n-0.6.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sqlite3-ruby (v1.3.3, C:/Ruby192/lib/ruby/gems/1.9.1/gems/sqlite3-ruby-1.3.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sqlite3 (v1.3.3, C:/Ruby192/lib/ruby/gems/1.9.1/gems/sqlite3-1.3.3-x86-mingw32)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activemerchant (v1.15.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/activemerchant-1.15.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] turn (v0.8.2, C:/Ruby192/lib/ruby/gems/1.9.1/gems/turn-0.8.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] uglifier (v1.0.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/uglifier-1.0.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] formtastic (v2.0.0.rc3, C:/Ruby192/lib/ruby/gems/1.9.1/gems/formtastic-2.0.0.rc3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sprockets (v2.0.0.beta.10, C:/Ruby192/lib/ruby/gems/1.9.1/gems/sprockets-2.0.0.beta.10)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] haml-rails (v0.3.4, C:/Ruby192/lib/ruby/gems/1.9.1/gems/haml-rails-0.3.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] devise (v1.4.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/devise-1.4.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] coffee-script (v2.2.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/coffee-script-2.2.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] jquery-rails (v1.0.12, C:/Ruby192/lib/ruby/gems/1.9.1/gems/jquery-rails-1.0.12)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] hpricot (v0.8.4, C:/Ruby192/lib/ruby/gems/1.9.1/gems/hpricot-0.8.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] carrierwave (v0.5.4, C:/Ruby192/lib/ruby/gems/1.9.1/gems/carrierwave-0.5.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] ruby_parser (v2.0.6, C:/Ruby192/lib/ruby/gems/1.9.1/gems/ruby_parser-2.0.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sass-rails (v3.1.0.rc.2, C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-rails-3.1.0.rc.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] haml (v3.2.0.alpha.5, C:/Ruby192/lib/ruby/gems/1.9.1/gems/haml-3.2.0.alpha.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sprockets (v2.0.0.beta.10, C:/Ruby192/lib/ruby/gems/1.9.1/gems/sprockets-2.0.0.beta.10)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] warden (v1.0.4, C:/Ruby192/lib/ruby/gems/1.9.1/gems/warden-1.0.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] ansi (v1.2.5, C:/Ruby192/lib/ruby/gems/1.9.1/gems/ansi-1.2.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] braintree (v2.10.1, C:/Ruby192/lib/ruby/gems/1.9.1/gems/braintree-2.10.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] haml (v3.2.0.alpha.5, C:/Ruby192/lib/ruby/gems/1.9.1/gems/haml-3.2.0.alpha.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] coffee-script-source (v1.1.1, C:/Ruby192/lib/ruby/gems/1.9.1/gems/coffee-script-source-1.1.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sexp_processor (v3.0.5, C:/Ruby192/lib/ruby/gems/1.9.1/gems/sexp_processor-3.0.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] orm_adapter (v0.0.5, C:/Ruby192/lib/ruby/gems/1.9.1/gems/orm_adapter-0.0.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] execjs (v1.2.0, C:/Ruby192/lib/ruby/gems/1.9.1/gems/execjs-1.2.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sass (v3.2.0.alpha.9, C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.9)" level="application" />
   </component>
 </module>
 

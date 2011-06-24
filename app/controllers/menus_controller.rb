@@ -1,8 +1,10 @@
 class MenusController < ApplicationController
+
   # GET /menus
   # GET /menus.json
   def index
     @menus = Menu.all
+    $ghold_id = (params[:restaurant_id])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -41,14 +43,16 @@ class MenusController < ApplicationController
   # POST /menus.json
   def create
     @menu = Menu.new(params[:menu])
+    @menu.restaurant_id = $ghold_id
+#   @menu.restaurant_id = current_admin
 #   @menu.restaurant_id = 2
-
 #   @menu.restaurant_id = restaurant.id
 #   @menu = current_admin.menus.build(params[:menu])
 
     respond_to do |format|
       if @menu.save
-        format.html { redirect_to @menu, notice: 'Menu was successfully created.' }
+#       format.html { redirect_to @menu, notice: 'Menu was successfully created.' }
+        redirect_to restaurant_menus_utl, notice: 'Menu was successfully created.'
         format.json { render json: @menu, status: :created, location: @menu }
       else
         format.html { render action: "new" }
