@@ -20,8 +20,7 @@
       %td= number_to_currency(menu.price)
       %td= number_to_currency(menu.sp_price)
       %td= menu.prep_time
-      %td= link_to 'Show', menu
       %td= link_to 'Edit', edit_menu_path(menu)
-      %td= link_to 'Destroy', menu, confirm: 'Are you sure?', method: :delete
+      %td= link_to 'Remove', menu, confirm: 'Are you sure?', method: :delete
 %br/
 = link_to 'New Menu', new_restaurant_menu_path

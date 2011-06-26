@@ -16,6 +16,7 @@ class RestaurantsController < ApplicationController
 #   @restaurant = Restaurant.find(params[:id])
 #   @admin = current_admin
     @restaurant = Restaurant.find(current_admin)
+    $ghold_id = current_admin.id
 
     respond_to do |format|
       format.html # show.html.erb
