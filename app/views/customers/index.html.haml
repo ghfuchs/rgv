@@ -10,6 +10,11 @@
     %tr
       %td= customer.first_name
       %td= customer.last_name
+      %td= customer.address
+      %td= customer.city
+      %td= customer.state
+      %td= customer.zipcode
+      %td= customer.read_legal
       %td= link_to 'Show', customer
       %td= link_to 'Edit', edit_customer_path(customer)
       %td= link_to 'Destroy', customer, confirm: 'Are you sure?', method: :delete

@@ -1,10 +1,10 @@
 %p#notice= notice
 %p
-  %b Name:
-  = @customer.name
+  %b First Name:
+  = @customer.first_name
 %p
-  %b Description:
-  = @customer.description
+  %b Last Name:
+  = @customer.last_name
 %p
   %b Address:
   = @customer.address
@@ -17,6 +17,9 @@
 %p
   %b Zipcode:
   = @customer.zipcode
+%p
+  %b Legal:
+  = @customer.read_legal
 
 %p
   = link_to 'Edit', edit_name_restaurant_path(@customer)

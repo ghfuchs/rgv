@@ -1,4 +1,5 @@
 class Customer < ActiveRecord::Base
-  has_many :Orders
+  belongs_to :admin
+  has_many :orders
   has_many :reviews
 end
