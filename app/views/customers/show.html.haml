@@ -85,7 +85,7 @@
 = link_to 'Edit', edit_misc_restaurant_path(@customer)
 %p
 |
-\#{link_to 'Back', restaurants_path}
+\#{link_to 'Back', customers_path}
 %p
 = link_to 'Menu', restaurant_menus_path(@customer)
 %p
@@ -94,6 +94,35 @@
 %p
   %b Last name:
   = @customer.last_name
+%p
+  %b First name:
+  = @customer.first_name
+%p
+  %b Last name:
+  = @customer.last_name
+%p
+  %b First name:
+  = @customer.first_name
+%p
+  %b Last name:
+  = @customer.last_name
+%p
+  %b Address:
+  = @customer.address
+%p
+  %b City:
+  = @customer.city
+%p
+  %b State:
+  = @customer.state
+%p
+  %b Zipcode:
+  = @customer.zipcode
+%p
+  %b Legal:
+  = @customer.read_legal
+
+
 = link_to 'Edit', edit_customer_path(@customer)
 |
 \#{link_to 'Back', customers_path}

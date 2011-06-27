@@ -4,7 +4,6 @@ Rgv::Application.routes.draw do
 
 #  devise_for :admins
   devise_for :admins, :controllers => { :registrations => "registrations" }
-
   namespace :admin do
     #note- after authentication, flow is directed to restaurants#show
     #      this could change to restaurant#index if admin is allowed to have more than one restaurant
@@ -13,7 +12,6 @@ Rgv::Application.routes.draw do
 
 
   devise_for :users
-
   namespace :user do
     root :to => "customers#show"
   end

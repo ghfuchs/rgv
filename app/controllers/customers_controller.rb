@@ -13,7 +13,7 @@ class CustomersController < ApplicationController
   # GET /customers/1
   # GET /customers/1.json
   def show
-    @customer = Customer.find(params[:id])
+    @customer = Customer.find(current_user)
 
     respond_to do |format|
       format.html # show.html.erb
