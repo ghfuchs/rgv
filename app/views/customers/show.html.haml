@@ -1,5 +1,91 @@
 %p#notice= notice
 %p
+  %b Name:
+  = @customer.name
+%p
+  %b Description:
+  = @customer.description
+%p
+  %b Address:
+  = @customer.address
+%p
+  %b City:
+  = @customer.city
+%p
+  %b State:
+  = @customer.state
+%p
+  %b Zipcode:
+  = @customer.zipcode
+
+%p
+  = link_to 'Edit', edit_name_restaurant_path(@customer)
+
+%p
+  %b Monday Hours:
+  = @customer.mon_hours
+%p
+  %b Tuesday Hours:
+  = @customer.tue_hours
+%p
+  %b Wednesday Hours:
+  = @customer.wed_hours
+%p
+  %b Thursday Hours:
+  = @customer.thu_hours
+%p
+  %b Friday Hours:
+  = @customer.fri_hours
+%p
+  %b Saturday Hours:
+  = @customer.sat_hours
+%p
+  %b Sunday Hours:
+  = @customer.sun_hours
+
+%p
+  = link_to 'Edit', edit_hours_restaurant_path(@customer)
+
+%p
+  %b Logo:
+  = image_tag(@customer.logo)
+
+%p
+  = link_to 'Edit', edit_logo_restaurant_path(@customer)
+
+%p
+  %b Pickup:
+  = @customer.pickup
+%p
+  %b Delivery:
+  = @customer.delivery
+%p
+  %b Min delivery:
+  = number_to_currency(@customer.min_delivery)
+%p
+  %b Delivery fee:
+  = number_to_currency(@customer.delivery_fee)
+%p
+  %b Pickup:
+  = @customer.pickup
+%p
+  %b Website:
+  = @customer.website
+%p
+  %b Image Carousel Limit:
+  = @customer.image_carousel_limit
+%p
+  %b Image Carousel Count:
+  = @customer.image_carousel_count
+
+%p
+= link_to 'Edit', edit_misc_restaurant_path(@customer)
+%p
+|
+\#{link_to 'Back', restaurants_path}
+%p
+= link_to 'Menu', restaurant_menus_path(@customer)
+%p
   %b First name:
   = @customer.first_name
 %p

@@ -14,6 +14,10 @@ Rgv::Application.routes.draw do
 
   devise_for :users
 
+  namespace :user do
+    root :to => "customers#show"
+  end
+
 
   resources :order_items
 
