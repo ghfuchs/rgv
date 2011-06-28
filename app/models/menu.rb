@@ -1,6 +1,7 @@
 class Menu < ActiveRecord::Base
   attr_accessible :restaurant_id, :description, :menu_image, :qty, :price, :sp_price, :prep_time,
                   :category
+  default_scope :order => 'category'
   belongs_to :Restaurant
 #  belongs_to :menu_category
   has_many :Orders

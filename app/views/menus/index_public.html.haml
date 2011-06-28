@@ -6,7 +6,6 @@
     %th Image
     %th Qty
     %th Price
-    %th Sp price
     %th Prep time
     %th
     %th
@@ -18,7 +17,6 @@
       %td= menu.menu_image
       %td= menu.qty
       %td= number_to_currency(menu.price)
-      %td= number_to_currency(menu.sp_price)
       %td= menu.prep_time
       %td= link_to 'Order', edit_menu_path(menu)
 %br/

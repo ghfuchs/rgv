@@ -1,5 +1,7 @@
 Rgv::Application.routes.draw do
 
+  resources :carts
+
   get "main/home"
 
 #  devise_for :admins
