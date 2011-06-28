@@ -24,6 +24,7 @@ Run "rake doc:app" to generate API documentation for your models, controllers, h
            TODO global variable is used to hold restauarant_id, need to look for a alternative
            TODO way to do this. look into routes.rb ghold_id
 06/27/2011 added registerusers_controller to facilitate 'users' for Devise
+06/28/2011 Note- currently using restaurants#index as public index
 
 
 

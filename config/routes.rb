@@ -30,12 +30,13 @@ Rgv::Application.routes.draw do
     get :edit_hours, :on => :member
     get :edit_logo, :on => :member
     get :edit_misc, :on => :member
-    resources :menus
+    resources :menus do
+          get :index_public, :on => :collection
+    end
   end
 
-  resources :menus  do
-    get :index_public, :on => :collection
-  end
+  resources :menus
+
 
   resources :customers
 

@@ -3,8 +3,7 @@ class MenusController < ApplicationController
   # GET /menus
   # GET /menus.json
   def index
-    @menus = Menu.all
-#   $ghold_id = (params[:restaurant_id])
+    @menus = Menu.find_all_by_restaurant_id(params[:restaurant_id])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -15,8 +14,7 @@ class MenusController < ApplicationController
   # GET /menus
   # GET /menus.json
   def index_public
-    @menus = Menu.all
-#   $ghold_id = (params[:restaurant_id])
+    @menus = Menu.find_all_by_restaurant_id(params[:restaurant_id])
 
     respond_to do |format|
       format.html # index.html.erb
