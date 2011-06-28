@@ -12,6 +12,18 @@ class MenusController < ApplicationController
     end
   end
 
+  # GET /menus
+  # GET /menus.json
+  def index_public
+    @menus = Menu.all
+#   $ghold_id = (params[:restaurant_id])
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @menus }
+    end
+  end
+
   # GET /menus/1
   # GET /menus/1.json
   def show

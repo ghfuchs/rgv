@@ -1,0 +1,24 @@
+%h1 Listing menus
+%table
+  %tr
+    %th Category
+    %th Description
+    %th Image
+    %th Qty
+    %th Price
+    %th Sp price
+    %th Prep time
+    %th
+    %th
+    %th
+  - @menus.each do |menu|
+    %tr
+      %td= menu.category
+      %td= menu.description
+      %td= menu.menu_image
+      %td= menu.qty
+      %td= number_to_currency(menu.price)
+      %td= number_to_currency(menu.sp_price)
+      %td= menu.prep_time
+      %td= link_to 'Order', edit_menu_path(menu)
+%br/

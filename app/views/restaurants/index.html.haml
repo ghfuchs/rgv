@@ -20,9 +20,6 @@
     %th Min delivery
     %th Delivery fee
     %th Website
-    %th Image Carousel Limit
-    %th Image Carousel Count
-    %th Payment Type Accepted
     %th
     %th
     %th
@@ -47,11 +44,6 @@
       %td= number_to_currency(restaurant.min_delivery)
       %td= number_to_currency(restaurant.delivery_fee)
       %td= restaurant.website
-      %td= restaurant.image_carousel_limit
-      %td= restaurant.image_carousel_count
-      %td= restaurant.payment_type_accepted
-      %td= link_to 'Show', restaurant
-      %td= link_to 'Edit', edit_restaurant_path(restaurant)
-      %td= link_to 'Destroy', restaurant, confirm: 'Are you sure?', method: :delete
+      %td= link_to 'Reviews', restaurant
+      %td= link_to 'Order', edit_restaurant_path(restaurant)
 %br/
-= link_to 'New Restaurant', new_restaurant_path

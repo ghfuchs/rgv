@@ -3,9 +3,12 @@
   %tr
     %th First name
     %th Last name
-    %th
-    %th
-    %th
+    %th Address
+    %th City
+    %th State
+    %th Zipcode
+    %th Legal
+
   - @customers.each do |customer|
     %tr
       %td= customer.first_name

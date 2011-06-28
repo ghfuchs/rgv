@@ -23,6 +23,7 @@ Run "rake doc:app" to generate API documentation for your models, controllers, h
 06/24/2011 TODO used a global variable in order to create new menu records- menus#create, the
            TODO global variable is used to hold restauarant_id, need to look for a alternative
            TODO way to do this. look into routes.rb ghold_id
+06/27/2011 added registerusers_controller to facilitate 'users' for Devise
 
 
 

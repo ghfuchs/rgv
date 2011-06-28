@@ -10,10 +10,9 @@ Rgv::Application.routes.draw do
     root :to => "restaurants#show"
   end
 
-
-  devise_for :users
+  devise_for :users, :controllers => { :registrations => "registerusers" }
   namespace :user do
-    root :to => "customers#show"
+    root :to => "restaurants#index"
   end
 
 
@@ -25,7 +24,6 @@ Rgv::Application.routes.draw do
 
   resources :orders
 
-
 # resources :restaurants
   resources :restaurants do
     get :edit_name, :on => :member
@@ -35,8 +33,9 @@ Rgv::Application.routes.draw do
     resources :menus
   end
 
-  resources :menus
-
+  resources :menus  do
+    get :index_public, :on => :collection
+  end
 
   resources :customers
 
