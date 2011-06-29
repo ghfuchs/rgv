@@ -42,10 +42,10 @@ class OrderItemsController < ApplicationController
   def create
     @cart = current_cart
     menu = Menu.find(params[:menu_id])
-    @order_item = @cart.order_items.build(:menu_id => menu.id)
+    @order_item = @cart.add_menu(menu.id)
     respond_to do |format|
       if @order_item.save
-        format.html { redirect_to(@order_item.cart, :notice => 'Order item was successfully created.') }
+        format.html { redirect_to(@order_item.cart) }
         format.xml { render :xml => @order_item, :status => :created, :location => @order_item }
       else
         format.html { render :action => "new" }
