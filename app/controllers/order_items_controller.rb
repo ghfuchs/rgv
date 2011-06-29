@@ -40,15 +40,16 @@ class OrderItemsController < ApplicationController
   # POST /order_items
   # POST /order_items.json
   def create
-    @order_item = OrderItem.new(params[:order_item])
-
+    @cart = current_cart
+    menu = Menu.find(params[:menu_id])
+    @order_item = @cart.order_items.build(:menu => menu)
     respond_to do |format|
       if @order_item.save
-        format.html { redirect_to @order_item, notice: 'Order item was successfully created.' }
-        format.json { render json: @order_item, status: :created, location: @order_item }
+        format.html { redirect_to(@order_item.cart, :notice => 'Order item was successfully created.') }
+        format.xml { render :xml => @order_item, :status => :created, :location => @order_item }
       else
-        format.html { render action: "new" }
-        format.json { render json: @order_item.errors, status: :unprocessable_entity }
+        format.html { render :action => "new" }
+        format.xml { render :xml => @order_item.errors, :status => :unprocessable_entity }
       end
     end
   end
