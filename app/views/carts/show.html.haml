@@ -1,14 +1,5 @@
 %p#notice= notice
 
-%h2 Your Menu Order Cart
-%ul
-  - @cart.order_items.each do |item|
-    %li
-      = item.quantity
-      \× #{item.menu.description}
-
-= button_to 'Empty cart', @cart, :method => :delete, :confirm => 'Are you sure?'
-
 .cart_title Your Cart
 %table
   - @cart.order_items.each do |item|
