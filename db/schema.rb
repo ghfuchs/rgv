@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110628203536) do
+ActiveRecord::Schema.define(:version => 20110628233528) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -73,6 +73,7 @@ ActiveRecord::Schema.define(:version => 20110628203536) do
     t.string  "special_instructions"
     t.string  "prepared"
     t.integer "order_id"
+    t.integer "cart_id"
   end
 
   create_table "orders", :force => true do |t|

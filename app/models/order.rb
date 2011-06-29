@@ -1,7 +1,6 @@
 class Order < ActiveRecord::Base
-  belongs_to :Restaurant
-  belongs_to :Customer
-  belongs_to :Menu
+  belongs_to :restaurant
+  belongs_to :customer
   has_many :order_items
 
 end
