@@ -5,7 +5,7 @@
   - @cart.order_items.each do |item|
     %tr
       %td
-        = item.quantity
+        = item.qty
         \×
       %td= item.menu.description
       %td.item_price= number_to_currency(item.total_price)

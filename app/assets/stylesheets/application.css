@@ -5,6 +5,8 @@
  *= require_self
  *= require_tree .
 
+ *= require rgv
+
  *= require formtastic
  *= require formtastic_changes
  # app/assets/stylesheets/ie6.css
