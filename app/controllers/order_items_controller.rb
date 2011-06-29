@@ -42,7 +42,7 @@ class OrderItemsController < ApplicationController
   def create
     @cart = current_cart
     menu = Menu.find(params[:menu_id])
-    @order_item = @cart.order_items.build(:menu => menu)
+    @order_item = @cart.order_items.build(:menu_id => menu.id)
     respond_to do |format|
       if @order_item.save
         format.html { redirect_to(@order_item.cart, :notice => 'Order item was successfully created.') }
