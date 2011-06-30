@@ -75,13 +75,13 @@
       color: #44a;
       font-weight: bold;
       margin-right: 2em; } } }
-#store {
-  .cart_title {
-    font: 120% bold; }
-  .item_price {
-    text-align: right; }
-  .total_line {
-    text-align: right;
-    .total_cell {
-      font-weight: bold;
-      border-top: 1px solid #595; } } }
+
+#cart {
+  font-size: smaller;
+  color: white;
+  table {
+    font-size: smaller;
+    color: white;
+    border-top: 1px dotted #595;
+    border-bottom: 1px dotted #595;
+    margin-bottom: 10px; } }

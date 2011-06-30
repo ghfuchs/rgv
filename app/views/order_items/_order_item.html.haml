@@ -1,0 +1,6 @@
+%tr
+  %td
+    = order_item.qty
+    \×
+  %td= order_item.menu.description
+  %td.item_price= number_to_currency(order_item.total_price)

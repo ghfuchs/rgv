@@ -1,0 +1,17 @@
+.cart_title Your Cart
+%table
+  = render(cart.order_items)
+  %tr.total_line
+    %td{:colspan => "2"} Total
+    %td.total_cell= number_to_currency(cart.total_price)
+= button_to 'Empty cart', cart, :method => :delete, |
+  :confirm => 'Are you sure?'                       |
+
+
+
+
+
+
+
+
+
