@@ -9,11 +9,6 @@
 
  *= require formtastic
  *= require formtastic_changes
- # app/assets/stylesheets/ie6.css
- *= require formtastic_ie6
-
- # app/assets/stylesheets/ie7.css
- *= require formtastic_ie7
- *= require blueprint/reset
- *= require blueprint/typography
+ *  require blueprint/reset
+ *  require blueprint/typography
 */

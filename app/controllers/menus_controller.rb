@@ -1,5 +1,7 @@
 class MenusController < ApplicationController
 
+  layout "menu_layout"
+
   # GET /menus
   # GET /menus.json
   def index
@@ -15,6 +17,7 @@ class MenusController < ApplicationController
   # GET /menus.json
   def index_public
     @menus = Menu.find_all_by_restaurant_id(params[:restaurant_id])
+    @cart = current_cart
 
     respond_to do |format|
       format.html # index.html.erb
